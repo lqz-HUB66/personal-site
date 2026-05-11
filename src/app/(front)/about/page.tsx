@@ -4,6 +4,8 @@ import { Github, Mail, MapPin } from "lucide-react";
 import FadeIn from "@/components/ui/fade-in";
 import { safeJsonParse } from "@/lib/utils";
 
+export const dynamic = "force-dynamic";
+
 export default async function AboutPage() {
   const profile = await prisma.profile.findFirst();
   const skills: string[] = safeJsonParse<string[]>(profile?.skills, []);

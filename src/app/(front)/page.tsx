@@ -7,6 +7,8 @@ import MaskReveal from "@/components/ui/mask-reveal";
 import GridCard from "@/components/ui/grid-card";
 import { safeJsonParse } from "@/lib/utils";
 
+export const dynamic = "force-dynamic";
+
 export default async function HomePage() {
   const profile = await prisma.profile.findFirst();
   const featuredHonors = await prisma.honor.findMany({

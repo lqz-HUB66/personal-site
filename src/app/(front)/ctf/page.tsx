@@ -3,6 +3,8 @@ import Link from "next/link";
 import { Shield, ArrowRight } from "lucide-react";
 import FadeIn from "@/components/ui/fade-in";
 
+export const dynamic = "force-dynamic";
+
 const CTF_CATEGORIES = ["Web", "Crypto", "Misc", "Reverse", "Pwn"];
 
 export default async function CTFPage() {

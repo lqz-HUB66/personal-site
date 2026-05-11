@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { FileText, ArrowRight } from "lucide-react";
 import FadeIn from "@/components/ui/fade-in";
+
+export const dynamic = "force-dynamic";
 import { safeJsonParse } from "@/lib/utils";
 
 export default async function BlogPage() {

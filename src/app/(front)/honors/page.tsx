@@ -1,6 +1,8 @@
 import { prisma } from "@/lib/prisma";
 import HonorsContent from "./honors-content";
 
+export const dynamic = "force-dynamic";
+
 export default async function HonorsPage() {
   const honors = await prisma.honor.findMany({
     orderBy: [{ year: "desc" }, { createdAt: "desc" }],

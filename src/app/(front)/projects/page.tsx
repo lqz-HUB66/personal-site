@@ -1,6 +1,8 @@
 import { prisma } from "@/lib/prisma";
 import Image from "next/image";
 import { Github, ExternalLink, FolderOpen } from "lucide-react";
+
+export const dynamic = "force-dynamic";
 import FadeIn from "@/components/ui/fade-in";
 import { safeJsonParse } from "@/lib/utils";
 

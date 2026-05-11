@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Tag } from "lucide-react";
+
+export const dynamic = "force-dynamic";
 import MarkdownBody from "@/components/markdown/markdown-body";
 import FadeIn from "@/components/ui/fade-in";
 import { safeJsonParse } from "@/lib/utils";
