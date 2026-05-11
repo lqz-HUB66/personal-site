@@ -38,7 +38,7 @@ COPY --from=build /app/prisma/dev.db ./prisma/dev.db
 COPY --from=build --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=build --chown=nextjs:nodejs /app/.next/static ./.next/static
 
-RUN chown -R nextjs:nodejs prisma
+RUN mkdir -p public/uploads && chown -R nextjs:nodejs prisma public/uploads
 
 USER nextjs
 
