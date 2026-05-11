@@ -21,7 +21,7 @@ export default function MaskReveal({ children, className = "", delay = 0 }: Mask
       }}
     >
       <motion.span
-        className="inline-block"
+        className="inline-block whitespace-nowrap"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
